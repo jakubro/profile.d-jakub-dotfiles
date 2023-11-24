@@ -1,0 +1,45 @@
+#!/bin/bash
+
+export ENDCOLOR="\e[0m"
+export BOLD="\e[1m"
+export FAINT="\e[2m"
+export ITALICS="\e[3m"
+export UNDERLINE="\e[4m"
+
+export BLACK="\e[30m"
+export WHITE="\e[97m"
+
+export RED="\e[31m"
+export GREEN="\e[32m"
+export YELLOW="\e[33m"
+export BLUE="\e[34m"
+export MAGENTA="\e[35m"
+export CYAN="\e[36m"
+export GRAY="\e[90m"
+
+export LIGHT_RED="\e[91m"
+export LIGHT_GREEN="\e[92m"
+export LIGHT_YELLOW="\e[93m"
+export LIGHT_BLUE="\e[94m"
+export LIGHT_MAGENTA="\e[95m"
+export LIGHT_CYAN="\e[96m"
+export LIGHT_GRAY="\e[37m"
+
+export BG_BLACK="\e[40m"
+export BG_WHITE="\e[107m"
+
+export BG_RED="\e[41m"
+export BG_GREEN="\e[42m"
+export BG_YELLOW="\e[43m"
+export BG_BLUE="\e[44m"
+export BG_MAGENTA="\e[45m"
+export BG_CYAN="\e[46m"
+export BG_GRAY="\e[100m"
+
+export BG_LIGHT_RED="\e[101m"
+export BG_LIGHT_GREEN="\e[102m"
+export BG_LIGHT_YELLOW="\e[103m"
+export BG_LIGHT_BLUE="\e[104m"
+export BG_LIGHT_MAGENTA="\e[105m"
+export BG_LIGHT_CYAN="\e[106m"
+export BG_LIGHT_GRAY="\e[47m"

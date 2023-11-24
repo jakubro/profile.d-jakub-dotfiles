@@ -1,0 +1,28 @@
+#!/bin/bash
+
+export SYSTEMD_PAGER= # turn off systemctl auto-paging
+
+# editors
+export EDITOR=nano
+export VISUAL=subl
+
+# gpg
+GPG_TTY=$(tty)
+export GPG_TTY
+
+# profile
+alias reload="\. ~/.bashrc"
+alias d-reload="direnv reload"
+
+# rm
+alias trash="trash-put"
+alias rm="trash-put"
+alias rmf="$(type -fP rm)"
+
+# ls
+alias ls="ls -h --color=auto"
+alias ll="ls -alF"
+alias lz="ll -Z"
+
+# sudo
+alias sudo="sudo " # sudo with aliases

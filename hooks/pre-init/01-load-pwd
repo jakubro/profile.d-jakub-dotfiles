@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ -f ~/.cache/.profile.d/pwd ]; then
+
+  __PROFILE_D_NEW_PWD__=$(cat ~/.cache/.profile.d/pwd)
+
+  if [ -d "$__PROFILE_D_NEW_PWD__" ]; then
+    cd "$__PROFILE_D_NEW_PWD__" || true
+  fi
+
+  unset __PROFILE_D_NEW_PWD__
+
+fi

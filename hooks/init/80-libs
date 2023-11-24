@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# boost
+
+if [ -d /usr/include/boost ]; then
+  export BOOST_INCLUDE_DIRS=/usr/include/boost
+fi
+
+# XLA
+
+if [ -n "$CUDA_DIR" ]; then
+  export XLA_FLAGS="--xla_gpu_cuda_data_dir='$CUDA_DIR'"
+fi

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+if [ -d ~/.temporalio/bin ]; then
+  export PATH=$PATH:~/.temporalio/bin
+fi

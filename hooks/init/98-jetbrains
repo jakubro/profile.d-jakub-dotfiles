@@ -1,0 +1,5 @@
+#!/bin/bash
+
+if [ -d ~/.local/share/JetBrains/Toolbox/scripts ]; then
+  export PATH=$PATH:~/.local/share/JetBrains/Toolbox/scripts
+fi

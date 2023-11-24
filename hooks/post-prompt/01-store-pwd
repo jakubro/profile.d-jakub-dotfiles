@@ -1,0 +1,4 @@
+#!/bin/bash
+
+mkdir -p ~/.cache/.profile.d
+pwd >~/.cache/.profile.d/pwd
