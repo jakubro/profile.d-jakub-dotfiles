@@ -12,7 +12,7 @@ export GPG_TTY
 
 # profile
 alias reload="\. ~/.bashrc"
-alias d-reload="direnv reload"
+alias d-reload="direnv allow && direnv reload"
 
 # rm
 alias trash="trash-put"
