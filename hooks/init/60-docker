@@ -1,5 +1,4 @@
 #!/bin/bash
-# shellcheck disable=SC2139,SC2016
 
 alias docker-compose="docker compose"
 
@@ -25,64 +24,64 @@ __profile_d_build_docker_command__() {
 
 }
 
-__PROFILE_D_DOCKER_CMD_ROOT__=$(__profile_d_build_docker_command__ false)
+__profile_d_docker_cmd_root__=$(__profile_d_build_docker_command__ false)
 
-alias throwaway-docker="$__PROFILE_D_DOCKER_CMD_ROOT__"
+alias throwaway-docker="$__profile_d_docker_cmd_root__"
 
-alias throwaway-ubuntu="$__PROFILE_D_DOCKER_CMD_ROOT__ -it ubuntu /bin/bash"
-alias throwaway-ubuntu-22="$__PROFILE_D_DOCKER_CMD_ROOT__ -it ubuntu:22 /bin/bash"
-alias throwaway-ubuntu-18="$__PROFILE_D_DOCKER_CMD_ROOT__ -it ubuntu:18 /bin/bash"
-alias throwaway-ubuntu-20="$__PROFILE_D_DOCKER_CMD_ROOT__ -it ubuntu:20 /bin/bash"
+alias throwaway-ubuntu="$__profile_d_docker_cmd_root__ -it ubuntu /bin/bash"
+alias throwaway-ubuntu-22="$__profile_d_docker_cmd_root__ -it ubuntu:22 /bin/bash"
+alias throwaway-ubuntu-18="$__profile_d_docker_cmd_root__ -it ubuntu:18 /bin/bash"
+alias throwaway-ubuntu-20="$__profile_d_docker_cmd_root__ -it ubuntu:20 /bin/bash"
 
-alias throwaway-fedora="$__PROFILE_D_DOCKER_CMD_ROOT__ -it fedora /bin/bash"
-alias throwaway-fedora-37="$__PROFILE_D_DOCKER_CMD_ROOT__ -it fedora:37 /bin/bash"
-alias throwaway-fedora-36="$__PROFILE_D_DOCKER_CMD_ROOT__ -it fedora:36 /bin/bash"
-alias throwaway-fedora-35="$__PROFILE_D_DOCKER_CMD_ROOT__ -it fedora:35 /bin/bash"
-alias throwaway-fedora-34="$__PROFILE_D_DOCKER_CMD_ROOT__ -it fedora:34 /bin/bash"
-alias throwaway-fedora-33="$__PROFILE_D_DOCKER_CMD_ROOT__ -it fedora:33 /bin/bash"
-alias throwaway-fedora-32="$__PROFILE_D_DOCKER_CMD_ROOT__ -it fedora:32 /bin/bash"
-alias throwaway-fedora-31="$__PROFILE_D_DOCKER_CMD_ROOT__ -it fedora:31 /bin/bash"
+alias throwaway-fedora="$__profile_d_docker_cmd_root__ -it fedora /bin/bash"
+alias throwaway-fedora-37="$__profile_d_docker_cmd_root__ -it fedora:37 /bin/bash"
+alias throwaway-fedora-36="$__profile_d_docker_cmd_root__ -it fedora:36 /bin/bash"
+alias throwaway-fedora-35="$__profile_d_docker_cmd_root__ -it fedora:35 /bin/bash"
+alias throwaway-fedora-34="$__profile_d_docker_cmd_root__ -it fedora:34 /bin/bash"
+alias throwaway-fedora-33="$__profile_d_docker_cmd_root__ -it fedora:33 /bin/bash"
+alias throwaway-fedora-32="$__profile_d_docker_cmd_root__ -it fedora:32 /bin/bash"
+alias throwaway-fedora-31="$__profile_d_docker_cmd_root__ -it fedora:31 /bin/bash"
 
-alias throwaway-amazonlinux="$__PROFILE_D_DOCKER_CMD_ROOT__ -it amazonlinux /bin/bash"
-alias throwaway-amazonlinux-2023="$__PROFILE_D_DOCKER_CMD_ROOT__ -it amazonlinux:2023 /bin/bash"
-alias throwaway-amazonlinux-2022="$__PROFILE_D_DOCKER_CMD_ROOT__ -it amazonlinux:2022 /bin/bash"
-alias throwaway-amazonlinux-2="$__PROFILE_D_DOCKER_CMD_ROOT__ -it amazonlinux:2 /bin/bash"
-alias throwaway-amazonlinux-1="$__PROFILE_D_DOCKER_CMD_ROOT__ -it amazonlinux:1 /bin/bash"
+alias throwaway-amazonlinux="$__profile_d_docker_cmd_root__ -it amazonlinux /bin/bash"
+alias throwaway-amazonlinux-2023="$__profile_d_docker_cmd_root__ -it amazonlinux:2023 /bin/bash"
+alias throwaway-amazonlinux-2022="$__profile_d_docker_cmd_root__ -it amazonlinux:2022 /bin/bash"
+alias throwaway-amazonlinux-2="$__profile_d_docker_cmd_root__ -it amazonlinux:2 /bin/bash"
+alias throwaway-amazonlinux-1="$__profile_d_docker_cmd_root__ -it amazonlinux:1 /bin/bash"
 
-alias throwaway-node="$__PROFILE_D_DOCKER_CMD_ROOT__ -it node /bin/bash"
-alias throwaway-node-20="$__PROFILE_D_DOCKER_CMD_ROOT__ -it node:20 /bin/bash"
-alias throwaway-node-18="$__PROFILE_D_DOCKER_CMD_ROOT__ -it node:18 /bin/bash"
-alias throwaway-node-16="$__PROFILE_D_DOCKER_CMD_ROOT__ -it node:16 /bin/bash"
-alias throwaway-node-14="$__PROFILE_D_DOCKER_CMD_ROOT__ -it node:14 /bin/bash"
+alias throwaway-node="$__profile_d_docker_cmd_root__ -it node /bin/bash"
+alias throwaway-node-20="$__profile_d_docker_cmd_root__ -it node:20 /bin/bash"
+alias throwaway-node-18="$__profile_d_docker_cmd_root__ -it node:18 /bin/bash"
+alias throwaway-node-16="$__profile_d_docker_cmd_root__ -it node:16 /bin/bash"
+alias throwaway-node-14="$__profile_d_docker_cmd_root__ -it node:14 /bin/bash"
 
-alias throwaway-python="$__PROFILE_D_DOCKER_CMD_ROOT__ -it python /bin/bash"
-alias throwaway-python-3.11="$__PROFILE_D_DOCKER_CMD_ROOT__ -it python:3.11 /bin/bash"
-alias throwaway-python-3.10="$__PROFILE_D_DOCKER_CMD_ROOT__ -it python:3.10 /bin/bash"
-alias throwaway-python-3.9="$__PROFILE_D_DOCKER_CMD_ROOT__ -it python:3.9 /bin/bash"
-alias throwaway-python-3.8="$__PROFILE_D_DOCKER_CMD_ROOT__ -it python:3.8 /bin/bash"
-alias throwaway-python-3.7="$__PROFILE_D_DOCKER_CMD_ROOT__ -it python:3.7 /bin/bash"
+alias throwaway-python="$__profile_d_docker_cmd_root__ -it python /bin/bash"
+alias throwaway-python-3.11="$__profile_d_docker_cmd_root__ -it python:3.11 /bin/bash"
+alias throwaway-python-3.10="$__profile_d_docker_cmd_root__ -it python:3.10 /bin/bash"
+alias throwaway-python-3.9="$__profile_d_docker_cmd_root__ -it python:3.9 /bin/bash"
+alias throwaway-python-3.8="$__profile_d_docker_cmd_root__ -it python:3.8 /bin/bash"
+alias throwaway-python-3.7="$__profile_d_docker_cmd_root__ -it python:3.7 /bin/bash"
 
-alias throwaway-ruby="$__PROFILE_D_DOCKER_CMD_ROOT__ -it ruby /bin/bash"
-alias throwaway-ruby-3.1="$__PROFILE_D_DOCKER_CMD_ROOT__ -it ruby:3.1 /bin/bash"
-alias throwaway-ruby-2.4="$__PROFILE_D_DOCKER_CMD_ROOT__ -it ruby:2.4 /bin/bash"
+alias throwaway-ruby="$__profile_d_docker_cmd_root__ -it ruby /bin/bash"
+alias throwaway-ruby-3.1="$__profile_d_docker_cmd_root__ -it ruby:3.1 /bin/bash"
+alias throwaway-ruby-2.4="$__profile_d_docker_cmd_root__ -it ruby:2.4 /bin/bash"
 
-alias throwaway-postgres="$__PROFILE_D_DOCKER_CMD_ROOT__ -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -p 5432:5432 postgres"
-alias throwaway-postgres-16="$__PROFILE_D_DOCKER_CMD_ROOT__ -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -p 5432:5432 postgres:16"
-alias throwaway-postgres-15="$__PROFILE_D_DOCKER_CMD_ROOT__ -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -p 5432:5432 postgres:15"
-alias throwaway-postgres-14="$__PROFILE_D_DOCKER_CMD_ROOT__ -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -p 5432:5432 postgres:14"
-alias throwaway-postgres-13="$__PROFILE_D_DOCKER_CMD_ROOT__ -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -p 5432:5432 postgres:13"
-alias throwaway-postgres-12="$__PROFILE_D_DOCKER_CMD_ROOT__ -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -p 5432:5432 postgres:12"
-alias throwaway-postgres-11="$__PROFILE_D_DOCKER_CMD_ROOT__ -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -p 5432:5432 postgres:11"
+alias throwaway-postgres="$__profile_d_docker_cmd_root__ -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -p 5432:5432 postgres"
+alias throwaway-postgres-16="$__profile_d_docker_cmd_root__ -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -p 5432:5432 postgres:16"
+alias throwaway-postgres-15="$__profile_d_docker_cmd_root__ -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -p 5432:5432 postgres:15"
+alias throwaway-postgres-14="$__profile_d_docker_cmd_root__ -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -p 5432:5432 postgres:14"
+alias throwaway-postgres-13="$__profile_d_docker_cmd_root__ -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -p 5432:5432 postgres:13"
+alias throwaway-postgres-12="$__profile_d_docker_cmd_root__ -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -p 5432:5432 postgres:12"
+alias throwaway-postgres-11="$__profile_d_docker_cmd_root__ -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -p 5432:5432 postgres:11"
 
-alias throwaway-mysql="$__PROFILE_D_DOCKER_CMD_ROOT__ -e MYSQL_ROOT_PASSWORD=mysql -p 3306:3306 mysql"
-alias throwaway-mysql-8="$__PROFILE_D_DOCKER_CMD_ROOT__ -e MYSQL_ROOT_PASSWORD=mysql -p 3306:3306 mysql:8"
-alias throwaway-mysql-5.7="$__PROFILE_D_DOCKER_CMD_ROOT__ -e MYSQL_ROOT_PASSWORD=mysql -p 3306:3306 mysql:5.7"
+alias throwaway-mysql="$__profile_d_docker_cmd_root__ -e MYSQL_ROOT_PASSWORD=mysql -p 3306:3306 mysql"
+alias throwaway-mysql-8="$__profile_d_docker_cmd_root__ -e MYSQL_ROOT_PASSWORD=mysql -p 3306:3306 mysql:8"
+alias throwaway-mysql-5.7="$__profile_d_docker_cmd_root__ -e MYSQL_ROOT_PASSWORD=mysql -p 3306:3306 mysql:5.7"
 
-alias throwaway-redis="$__PROFILE_D_DOCKER_CMD_ROOT__ -p 6379:6379 redis"
-alias throwaway-redis-7="$__PROFILE_D_DOCKER_CMD_ROOT__ -p 6379:6379 redis:7"
-alias throwaway-redis-6="$__PROFILE_D_DOCKER_CMD_ROOT__ -p 6379:6379 redis:6"
+alias throwaway-redis="$__profile_d_docker_cmd_root__ -p 6379:6379 redis"
+alias throwaway-redis-7="$__profile_d_docker_cmd_root__ -p 6379:6379 redis:7"
+alias throwaway-redis-6="$__profile_d_docker_cmd_root__ -p 6379:6379 redis:6"
 
-alias throwaway-prefect-2-py-3.11="$__PROFILE_D_DOCKER_CMD_ROOT__ -it prefecthq/prefect:2-python3.11 /bin/bash"
+alias throwaway-prefect-2-py-3.11="$__profile_d_docker_cmd_root__ -it prefecthq/prefect:2-python3.11 /bin/bash"
 
 unset __profile_d_build_docker_command__
-unset __PROFILE_D_DOCKER_CMD_ROOT__
+unset __profile_d_docker_cmd_root__

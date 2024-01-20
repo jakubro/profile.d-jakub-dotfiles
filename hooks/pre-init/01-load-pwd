@@ -2,12 +2,12 @@
 
 if [ -f ~/.cache/.profile.d/pwd ]; then
 
-  __PROFILE_D_NEW_PWD__=$(cat ~/.cache/.profile.d/pwd)
+  __profile_d_new_pwd__=$(cat ~/.cache/.profile.d/pwd)
 
-  if [ -d "$__PROFILE_D_NEW_PWD__" ]; then
-    cd "$__PROFILE_D_NEW_PWD__" || true
+  if [ -d "$__profile_d_new_pwd__" ]; then
+    cd "$__profile_d_new_pwd__" || true
   fi
 
-  unset __PROFILE_D_NEW_PWD__
+  unset __profile_d_new_pwd__
 
 fi
