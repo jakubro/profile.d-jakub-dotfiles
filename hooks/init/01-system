@@ -4,6 +4,8 @@ export PATH=~/.local/bin:$PATH
 
 export SYSTEMD_PAGER= # turn off systemctl auto-paging
 
+export TERM=linux
+
 # editors
 export EDITOR=nano
 export VISUAL=subl
