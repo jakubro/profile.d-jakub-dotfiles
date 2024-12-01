@@ -133,11 +133,11 @@ The plugin sets up various environment variables for development tools:
 
 ## Requirements
 
-- Base requirements from profile.d
-- Optional tools based on usage:
-    - NVIDIA drivers and CUDA for GPU features
-    - Docker for container features
-    - Development tools (Python, Node.js, Ruby, etc.)
+Optional tools based on usage:
+
+- NVIDIA drivers and CUDA for GPU features
+- Docker for container features
+- Development tools (Python, Node.js, Ruby, etc.)
 
 ## Contributing
 
