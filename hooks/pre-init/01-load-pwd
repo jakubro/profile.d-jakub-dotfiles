@@ -1,8 +1,8 @@
 #!/bin/bash
 
-if [ -f ~/.cache/.profile.d/pwd ]; then
+if [ -f ~/.cache/profile.d/pwd ]; then
 
-  __profile_d_new_pwd__=$(cat ~/.cache/.profile.d/pwd)
+  __profile_d_new_pwd__=$(cat ~/.cache/profile.d/pwd)
 
   if [ -d "$__profile_d_new_pwd__" ]; then
     cd "$__profile_d_new_pwd__" || true
