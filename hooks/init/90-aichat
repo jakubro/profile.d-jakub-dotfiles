@@ -1,0 +1,5 @@
+#!/bin/bash
+
+alias ai="aichat -e"
+alias aiexec="aichat -e"
+alias aicode="aichat -c"

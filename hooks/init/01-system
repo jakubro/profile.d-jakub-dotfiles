@@ -31,3 +31,4 @@ alias sudo="sudo " # sudo with aliases
 
 # python
 alias pip-upgrade-all='pip install --upgrade --upgrade-strategy only-if-needed $(pip freeze | cut -d = -f 1) && pip freeze > requirements.txt'
+alias http-server="python -m http.server 9321"

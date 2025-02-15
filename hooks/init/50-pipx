@@ -1,0 +1,4 @@
+#!/bin/bash
+
+PIPX_DEFAULT_PYTHON=$(direnv exec ~ which python 2>/dev/null)
+export PIPX_DEFAULT_PYTHON
