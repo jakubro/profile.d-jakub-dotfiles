@@ -1,0 +1,29 @@
+#!/bin/bash
+
+sleep-countdown() {
+
+  local T=$1
+
+  while [ "$T" -gt 0 ]; do
+    echo -ne "$(pretty-time-interval "$T")\033[0K\r"
+    sleep 1
+    : $((T--))
+  done
+
+}
+
+pretty-time-interval() {
+
+  local T=$1
+  local D=$((T / 60 / 60 / 24))
+  local H=$((T / 60 / 60 % 24))
+  local M=$((T / 60 % 60))
+  local S=$((T % 60))
+
+  ((D > 0)) && printf '%d days ' $D
+  ((H > 0)) && printf '%d hours ' $H
+  ((M > 0)) && printf '%d minutes ' $M
+  ((D > 0 || H > 0 || M > 0)) && printf 'and '
+  printf '%d seconds\n' $S
+
+}
